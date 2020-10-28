@@ -1,0 +1,185 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,Sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+/*Global*/
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+.button_1{
+  height: 38px;
+  background: #FF6978;
+  color: #ffffff;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.dark{
+  color: #ffffff;
+  background: #340068;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*Header*/
+header{
+  background: #340068;
+  color: #ffffff;
+  padding-top: 30px;
+  min-height: 70px;
+  border-bottom: #FF6978 3px solid;
+}
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+header li{
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+header #branding{
+  float: left;
+}
+header #branding h1{
+  margin: 0;
+}
+header nav{
+  float: right;
+  margin-top: 10px;
+}
+header .highlight, header .current a{
+  color: #FF6978;
+  font-weight: bold;
+}
+header a:hover{
+  color: #cccccc;
+  font-weight: bold;
+}
+#showcase{
+  min-height: 400px;
+  background: url('https://live.staticflickr.com/6202/6122735488_f80c161807_b.jpg') no-repeat 0 ;
+  text-align: center;
+  color: #ffffff;
+  background-size:cover;
+}
+#showcase h1{
+  margin-top: 80px;
+  font-size: 55px;
+  margin-bottom: 10px;
+}
+#showcase p{
+  font-size: 20px;
+}
+#newmeals{
+  padding: 15px;
+  color: #ffffff;
+  background: #340068;
+
+}
+#newmeals h1{
+  float: left;
+}
+#newmeals form{
+  float: right;
+  margin-top: 15px;
+}
+#newmeals input[type="email"]{
+  padding: 4px;
+  height: 28px;
+  width: 250px;
+
+}
+#boxes{
+  margin-top: 20px;
+}
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding:10px;
+}
+#boxes .box img{
+  width: 300px;
+  max-height: 200px;
+}
+
+/*sidebar*/
+
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width: 90%;
+  padding: 5px;
+}
+
+/*Main-col*/
+article#main-col{
+  float: left;
+  width: 65%;
+}
+/*Services*/
+ul#services li{
+  list-style: none;
+  padding: 20px;
+  border: #cccccc solid 1px;
+  margin-bottom: 5px;
+  background: #e6e6e6;
+
+}
+
+/*Media Query*/
+@media (max-width:768px) {
+  header #branding,
+  header nav,
+  header nav li,
+  #newmeals h1,
+  #newmeals form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+
+  header{
+    padding-bottom: 20px;
+  }
+ #showcase h1{
+   margin-top: 40px;
+ }
+#newmeals button, .quote button{
+  display: block;
+  width: 100%;
+}
+#newmeals form input[type="email"], .quote input, .quote textarea{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+}
+
+footer{
+  padding: 20px;
+  margin-top: 20px;
+  color: #ffffff;
+  background: #FF6978;
+  text-align: center;
+}
